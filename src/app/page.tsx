@@ -1,6 +1,19 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
+
+const NAV_LINKS = [
+  ["Início", "#inicio"],
+  ["Quem Somos", "#sobre"],
+  ["Áreas de Atuação", "#areas"],
+  ["Equipe", "#equipe"],
+  ["Contato", "#contato"],
+];
 
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[var(--navy)]/95 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
@@ -16,13 +29,7 @@ function Header() {
             />
           </a>
           <nav className="hidden lg:flex items-center gap-10">
-            {[
-              ["Início", "#inicio"],
-              ["Quem Somos", "#sobre"],
-              ["Áreas de Atuação", "#areas"],
-              ["Equipe", "#equipe"],
-              ["Contato", "#contato"],
-            ].map(([label, href]) => (
+            {NAV_LINKS.map(([label, href]) => (
               <a
                 key={href}
                 href={href}
@@ -40,8 +47,42 @@ function Header() {
           >
             Contato
           </a>
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="lg:hidden flex flex-col items-center justify-center w-10 h-10 gap-1.5"
+            aria-label="Abrir menu"
+          >
+            <span className={`block w-6 h-[2px] bg-white transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-[5px]" : ""}`} />
+            <span className={`block w-6 h-[2px] bg-white transition-all duration-300 ${menuOpen ? "opacity-0" : ""}`} />
+            <span className={`block w-6 h-[2px] bg-white transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-[5px]" : ""}`} />
+          </button>
         </div>
       </div>
+      {menuOpen && (
+        <div className="lg:hidden bg-[var(--navy)]/98 backdrop-blur-md border-t border-white/10">
+          <nav className="flex flex-col items-center py-6 gap-6">
+            {NAV_LINKS.map(([label, href]) => (
+              <a
+                key={href}
+                href={href}
+                onClick={() => setMenuOpen(false)}
+                className="text-[14px] font-medium text-white/70 hover:text-[var(--gold)] transition-colors duration-300 tracking-[3px] uppercase"
+              >
+                {label}
+              </a>
+            ))}
+            <a
+              href="https://wa.me/5555999655755"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMenuOpen(false)}
+              className="inline-flex items-center gap-2 border border-[var(--gold)]/40 hover:bg-[var(--gold)] text-[var(--gold)] hover:text-white px-6 py-2.5 text-[12px] font-semibold tracking-[2px] uppercase transition-all duration-300 mt-2"
+            >
+              Contato
+            </a>
+          </nav>
+        </div>
+      )}
     </header>
   );
 }
@@ -49,15 +90,15 @@ function Header() {
 function LogoText({ className = "" }: { className?: string }) {
   return (
     <div className={`flex flex-col items-center ${className}`}>
-      <div className="relative w-28 h-28 sm:w-32 sm:h-32 lg:w-40 lg:h-40 border-2 border-[var(--gold)] flex items-center justify-center mb-5 lg:mb-6">
-        <span className="font-[family-name:var(--font-heading)] text-5xl sm:text-6xl lg:text-7xl font-light text-white/80 tracking-tight select-none">
+      <div className="relative w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 border-2 border-[var(--gold)] flex items-center justify-center mb-4 lg:mb-5">
+        <span className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl lg:text-6xl font-light text-white/80 tracking-tight select-none">
           A<span className="text-white/60">F</span>
         </span>
       </div>
-      <h2 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl lg:text-7xl font-light text-white tracking-[0.15em] uppercase">
+      <h2 className="font-[family-name:var(--font-heading)] text-3xl sm:text-4xl lg:text-6xl font-light text-white tracking-[0.15em] uppercase">
         Aseff <span className="text-[var(--gold)]">&amp;</span> Farias
       </h2>
-      <p className="text-[var(--gold)] text-sm sm:text-base lg:text-lg tracking-[0.45em] uppercase mt-2 lg:mt-3 font-light">
+      <p className="text-[var(--gold)] text-xs sm:text-sm lg:text-base tracking-[0.45em] uppercase mt-2 lg:mt-3 font-light">
         Advocacia
       </p>
     </div>
