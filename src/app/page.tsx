@@ -65,7 +65,7 @@ function Hero() {
       </div>
       <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-12 flex flex-col items-center justify-center min-h-screen text-center">
         <div>
-          <div className="mb-8">
+          <div className="mb-3">
             <Image
               src="/images/logo-light.png"
               alt="Aseff & Farias Advocacia"
