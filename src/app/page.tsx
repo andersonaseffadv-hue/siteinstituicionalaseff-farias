@@ -24,7 +24,7 @@ function Header() {
               alt="Aseff & Farias Advocacia"
               width={180}
               height={50}
-              className="h-12 lg:h-12 w-auto"
+              className="h-16 sm:h-14 lg:h-12 w-auto"
               priority
             />
           </a>
@@ -122,7 +122,7 @@ function Hero() {
           }}
         />
       </div>
-      <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-12 flex flex-col items-center justify-center min-h-screen text-center">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-12 flex flex-col items-center justify-center min-h-screen text-center pt-28 sm:pt-24 lg:pt-0">
         <div>
           <LogoText className="mb-8 lg:mb-10" />
           <h1 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl lg:text-6xl font-medium text-white leading-[1.1] mb-6">
@@ -156,7 +156,7 @@ function Hero() {
       </div>
       <div className="absolute bottom-6 sm:bottom-12 left-6 lg:left-12 flex items-center gap-4">
         <div className="w-[1px] h-16 bg-white/20" />
-        <span className="text-white/30 text-[11px] tracking-[3px] uppercase rotate-0 hidden sm:inline">
+        <span className="text-white/30 text-[11px] tracking-[3px] uppercase rotate-0">
           Role para baixo
         </span>
       </div>
