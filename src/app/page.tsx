@@ -46,6 +46,24 @@ function Header() {
   );
 }
 
+function LogoText({ className = "" }: { className?: string }) {
+  return (
+    <div className={`flex flex-col items-center ${className}`}>
+      <div className="relative w-28 h-28 sm:w-32 sm:h-32 lg:w-40 lg:h-40 border-2 border-[var(--gold)] flex items-center justify-center mb-5 lg:mb-6">
+        <span className="font-[family-name:var(--font-heading)] text-5xl sm:text-6xl lg:text-7xl font-light text-white/80 tracking-tight select-none">
+          A<span className="text-white/60">F</span>
+        </span>
+      </div>
+      <h2 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl lg:text-7xl font-light text-white tracking-[0.15em] uppercase">
+        Aseff <span className="text-[var(--gold)]">&amp;</span> Farias
+      </h2>
+      <p className="text-[var(--gold)] text-sm sm:text-base lg:text-lg tracking-[0.45em] uppercase mt-2 lg:mt-3 font-light">
+        Advocacia
+      </p>
+    </div>
+  );
+}
+
 function Hero() {
   return (
     <section
@@ -65,16 +83,7 @@ function Hero() {
       </div>
       <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-12 flex flex-col items-center justify-center min-h-screen text-center">
         <div>
-          <div className="mb-3">
-            <Image
-              src="/images/logo-light.png"
-              alt="Aseff & Farias Advocacia"
-              width={600}
-              height={600}
-              className="h-[40vh] sm:h-[45vh] lg:h-[50vh] w-auto mx-auto"
-              priority
-            />
-          </div>
+          <LogoText className="mb-8 lg:mb-10" />
           <h1 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl lg:text-6xl font-medium text-white leading-[1.1] mb-6">
             Soluções jurídicas
             {" "}
