@@ -55,6 +55,8 @@ function Header() {
             </svg>
             (55) 99965-5755
           </a>
+        </div>
+      </div>
     </header>
   );
 }
