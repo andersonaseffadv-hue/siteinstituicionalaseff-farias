@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Inter } from "next/font/google";
+import { Raleway, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 
-const playfair = Playfair_Display({
+const raleway = Raleway({
   subsets: ["latin"],
-  variable: "--font-heading",
+  variable: "--font-body",
   display: "swap",
 });
 
-const inter = Inter({
+const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  variable: "--font-body",
+  variable: "--font-heading",
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -48,7 +49,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${playfair.variable} ${inter.variable} h-full antialiased`}
+      className={`${raleway.variable} ${cormorant.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-[family-name:var(--font-body)]">
         {children}
