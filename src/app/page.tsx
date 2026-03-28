@@ -7,11 +7,11 @@ function Header() {
         <div className="flex items-center justify-between h-20 lg:h-24">
           <a href="#inicio" className="flex items-center">
             <Image
-              src="/images/logo-horizontal.png"
+              src="/images/logo-horizontal-light.png"
               alt="Aseff & Farias Advocacia"
               width={180}
               height={50}
-              className="h-10 lg:h-12 w-auto brightness-0 invert opacity-90"
+              className="h-10 lg:h-12 w-auto"
               priority
             />
           </a>
@@ -67,11 +67,11 @@ function Hero() {
         <div className="max-w-3xl">
           <div className="mb-10">
             <Image
-              src="/images/logo.png"
+              src="/images/logo-light.png"
               alt="Aseff & Farias Advocacia"
               width={160}
               height={160}
-              className="h-32 lg:h-40 w-auto brightness-0 invert opacity-85"
+              className="h-32 lg:h-40 w-auto"
               priority
             />
           </div>
@@ -474,11 +474,11 @@ function Footer() {
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           <div>
             <Image
-              src="/images/logo.png"
+              src="/images/logo-light.png"
               alt="Aseff & Farias Advocacia"
               width={100}
               height={100}
-              className="h-16 w-auto brightness-0 invert opacity-70 mb-6"
+              className="h-16 w-auto opacity-70 mb-6"
             />
             <p className="text-white/30 text-sm leading-[1.8]">
               Especialistas em Direito Bancário e Previdenciário, dedicados a
