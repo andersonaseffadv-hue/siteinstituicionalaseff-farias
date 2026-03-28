@@ -69,9 +69,9 @@ function Hero() {
             <Image
               src="/images/logo-light.png"
               alt="Aseff & Farias Advocacia"
-              width={160}
-              height={160}
-              className="h-32 lg:h-40 w-auto"
+              width={400}
+              height={400}
+              className="h-56 sm:h-64 lg:h-80 w-auto"
               priority
             />
           </div>
