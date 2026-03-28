@@ -63,31 +63,30 @@ function Hero() {
           }}
         />
       </div>
-      <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-12 pt-24">
-        <div className="max-w-3xl">
-          <div className="mb-10">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-12 flex flex-col items-center justify-center min-h-screen text-center">
+        <div>
+          <div className="mb-8">
             <Image
               src="/images/logo-light.png"
               alt="Aseff & Farias Advocacia"
-              width={400}
-              height={400}
-              className="h-56 sm:h-64 lg:h-80 w-auto"
+              width={600}
+              height={600}
+              className="h-[40vh] sm:h-[45vh] lg:h-[50vh] w-auto mx-auto"
               priority
             />
           </div>
-          <h1 className="font-[family-name:var(--font-heading)] text-5xl sm:text-6xl lg:text-7xl font-medium text-white leading-[1.1] mb-8">
+          <h1 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl lg:text-6xl font-medium text-white leading-[1.1] mb-6">
             Soluções jurídicas
-            <br />
+            {" "}
             <span className="text-[var(--gold-light)] italic">com transparência</span>
-            <br />
-            e dedicação
+            {" "}e dedicação
           </h1>
-          <p className="text-white/50 text-lg max-w-xl leading-relaxed mb-12 font-light">
+          <p className="text-white/50 text-lg max-w-2xl mx-auto leading-relaxed mb-10 font-light">
             Especialistas em Direito Bancário e Previdenciário. Atuamos para
             proteger seus direitos e conquistar os melhores resultados para
             cada caso.
           </p>
-          <div className="flex flex-col sm:flex-row gap-5">
+          <div className="flex flex-col sm:flex-row gap-5 justify-center">
             <a
               href="https://wa.me/5555999655755"
               target="_blank"
@@ -265,14 +264,14 @@ function Equipe() {
       oab: "OAB/RS 130.983",
       cargo: "Sócio Fundador",
       foto: "/images/anderson.jpeg",
-      desc: "Especialista em Direito Bancário, atua na defesa dos direitos de consumidores frente a instituições financeiras, com foco em revisão contratual e redução de dívidas.",
+      desc: "Especialista em Direito Bancário e Previdenciário, atua na defesa dos direitos de consumidores frente a instituições financeiras e na garantia de benefícios previdenciários junto ao INSS.",
     },
     {
       nome: "Laura Farias",
       oab: "OAB/RS 130.981",
       cargo: "Sócia Fundadora",
       foto: "/images/laura.jpeg",
-      desc: "Especialista em Direito Previdenciário, dedica-se a garantir que cada cliente tenha acesso aos benefícios previdenciários a que tem direito junto ao INSS.",
+      desc: "Especialista em Direito Bancário e Previdenciário, dedica-se a proteger os direitos de seus clientes com atendimento humanizado, desde a revisão contratual até a conquista de benefícios do INSS.",
     },
   ];
 
