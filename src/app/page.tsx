@@ -65,10 +65,16 @@ function Hero() {
       </div>
       <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-12 pt-24">
         <div className="max-w-3xl">
-          <div className="w-12 h-[1px] bg-[var(--gold)] mb-8" />
-          <p className="text-[var(--gold)] text-[13px] font-medium tracking-[4px] uppercase mb-6">
-            Aseff & Farias Advocacia
-          </p>
+          <div className="mb-10">
+            <Image
+              src="/images/logo.png"
+              alt="Aseff & Farias Advocacia"
+              width={160}
+              height={160}
+              className="h-32 lg:h-40 w-auto brightness-0 invert opacity-85"
+              priority
+            />
+          </div>
           <h1 className="font-[family-name:var(--font-heading)] text-5xl sm:text-6xl lg:text-7xl font-medium text-white leading-[1.1] mb-8">
             Soluções jurídicas
             <br />
@@ -256,14 +262,14 @@ function Equipe() {
   const socios = [
     {
       nome: "Anderson Aseff",
-      oab: "OAB/RS 113.983",
+      oab: "OAB/RS 130.983",
       cargo: "Sócio Fundador",
       foto: "/images/anderson.jpeg",
       desc: "Especialista em Direito Bancário, atua na defesa dos direitos de consumidores frente a instituições financeiras, com foco em revisão contratual e redução de dívidas.",
     },
     {
       nome: "Laura Farias",
-      oab: "OAB/RS 113.981",
+      oab: "OAB/RS 130.981",
       cargo: "Sócia Fundadora",
       foto: "/images/laura.jpeg",
       desc: "Especialista em Direito Previdenciário, dedica-se a garantir que cada cliente tenha acesso aos benefícios previdenciários a que tem direito junto ao INSS.",
@@ -530,10 +536,15 @@ function Footer() {
           </div>
         </div>
         <div className="border-t border-white/5 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-white/20 text-[13px]">
-            &copy; {new Date().getFullYear()} Aseff & Farias Advocacia. Todos os
-            direitos reservados.
-          </p>
+          <div>
+            <p className="text-white/20 text-[13px]">
+              &copy; {new Date().getFullYear()} Aseff & Farias Advocacia. Todos os
+              direitos reservados.
+            </p>
+            <p className="text-white/15 text-[11px] mt-1">
+              CNPJ: 60.973.346/0001-06
+            </p>
+          </div>
           <a
             href="https://instagram.com/aseffefarias"
             target="_blank"
