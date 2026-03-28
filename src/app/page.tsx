@@ -24,7 +24,7 @@ function Header() {
               alt="Aseff & Farias Advocacia"
               width={180}
               height={50}
-              className="h-10 lg:h-12 w-auto"
+              className="h-12 lg:h-12 w-auto"
               priority
             />
           </a>
@@ -90,15 +90,15 @@ function Header() {
 function LogoText({ className = "" }: { className?: string }) {
   return (
     <div className={`flex flex-col items-center ${className}`}>
-      <div className="relative w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 border-2 border-[var(--gold)] flex items-center justify-center mb-4 lg:mb-5">
-        <span className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl lg:text-6xl font-light text-white/80 tracking-tight select-none">
+      <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-28 lg:h-28 border-2 border-[var(--gold)] flex items-center justify-center mb-3 lg:mb-5">
+        <span className="font-[family-name:var(--font-heading)] text-3xl sm:text-4xl lg:text-6xl font-light text-white/80 tracking-tight select-none">
           A<span className="text-white/60">F</span>
         </span>
       </div>
-      <h2 className="font-[family-name:var(--font-heading)] text-3xl sm:text-4xl lg:text-6xl font-light text-white tracking-[0.15em] uppercase">
+      <h2 className="font-[family-name:var(--font-heading)] text-2xl sm:text-3xl lg:text-6xl font-light text-white tracking-[0.15em] uppercase">
         Aseff <span className="text-[var(--gold)]">&amp;</span> Farias
       </h2>
-      <p className="text-[var(--gold)] text-xs sm:text-sm lg:text-base tracking-[0.45em] uppercase mt-2 lg:mt-3 font-light">
+      <p className="text-[var(--gold)] text-[10px] sm:text-xs lg:text-base tracking-[0.45em] uppercase mt-1 lg:mt-3 font-light">
         Advocacia
       </p>
     </div>
@@ -154,9 +154,9 @@ function Hero() {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-12 left-6 lg:left-12 flex items-center gap-4">
+      <div className="absolute bottom-6 sm:bottom-12 left-6 lg:left-12 flex items-center gap-4">
         <div className="w-[1px] h-16 bg-white/20" />
-        <span className="text-white/30 text-[11px] tracking-[3px] uppercase rotate-0">
+        <span className="text-white/30 text-[11px] tracking-[3px] uppercase rotate-0 hidden sm:inline">
           Role para baixo
         </span>
       </div>
@@ -345,9 +345,9 @@ function Equipe() {
                   src={socio.foto}
                   alt={socio.nome}
                   fill
-                  className="object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
+                  className="object-cover object-top grayscale md:grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105 max-md:grayscale-0"
                 />
-                <div className="absolute inset-0 bg-[var(--navy-dark)]/30 group-hover:bg-transparent transition-colors duration-500" />
+                <div className="absolute inset-0 bg-[var(--navy-dark)]/30 md:bg-[var(--navy-dark)]/30 group-hover:bg-transparent max-md:bg-transparent transition-colors duration-500" />
               </div>
               <div className="space-y-3">
                 <h3 className="font-[family-name:var(--font-heading)] text-3xl font-medium text-white">
