@@ -103,7 +103,7 @@ function Hero() {
           }}
         />
       </div>
-      <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-12 flex flex-col items-center justify-center min-h-screen text-center pt-32 sm:pt-28 lg:pt-48">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-12 flex flex-col items-center justify-center min-h-screen text-center pt-32 pb-20 sm:pt-28 sm:pb-24 lg:pt-48 lg:pb-28">
         <div>
           <LogoText className="mb-8 lg:mb-10" />
           <h1 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl lg:text-6xl font-medium text-white leading-[1.1] mb-6 drop-shadow-lg">
