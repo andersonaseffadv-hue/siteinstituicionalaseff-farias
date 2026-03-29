@@ -165,11 +165,16 @@ function Sobre() {
               Bancário e Direito Previdenciário, construímos uma trajetória
               sólida baseada em resultados concretos e relações de confiança.
             </p>
-            <p className="text-[var(--charcoal)]/60 text-base leading-[1.8]">
+            <p className="text-[var(--charcoal)]/60 text-base leading-[1.8] mb-6">
               Acreditamos que cada cliente merece um atendimento único,
               personalizado e humano. Acompanhamos cada caso de perto, do
               início ao fim, garantindo que nossos clientes se sintam amparados
               em cada etapa do processo.
+            </p>
+            <p className="text-[var(--charcoal)]/60 text-base leading-[1.8]">
+              Com atendimento online, atuamos em âmbito nacional, atendendo
+              clientes em todos os estados do Brasil. Onde quer que você
+              esteja, nosso compromisso com a excelência é o mesmo.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-8">
