@@ -14,18 +14,18 @@ function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[var(--navy)]/95 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="flex items-center justify-between h-24 lg:h-36">
-          <a href="#inicio" className="flex items-center gap-3 lg:gap-4">
-            <div className="w-10 h-10 sm:w-11 sm:h-11 lg:w-14 lg:h-14 border border-[var(--gold)] flex items-center justify-center flex-shrink-0">
-              <span className="font-[family-name:var(--font-heading)] text-lg sm:text-xl lg:text-2xl font-light text-white/80 tracking-tight select-none">
-                A<span className="text-white/60">F</span>
+        <div className="flex items-center justify-between h-16 lg:h-20">
+          <a href="#inicio" className="flex items-center gap-2 lg:gap-3">
+            <div className="w-7 h-7 sm:w-8 sm:h-8 lg:w-9 lg:h-9 border border-[var(--gold)]/50 flex items-center justify-center flex-shrink-0">
+              <span className="font-[family-name:var(--font-heading)] text-xs sm:text-sm lg:text-base font-light text-white/70 tracking-tight select-none">
+                A<span className="text-white/50">F</span>
               </span>
             </div>
             <div className="flex flex-col">
-              <span className="font-[family-name:var(--font-heading)] text-lg sm:text-xl lg:text-3xl font-light text-white tracking-[0.1em] uppercase leading-tight">
-                Aseff <span className="text-[var(--gold)]">&amp;</span> Farias
+              <span className="font-[family-name:var(--font-heading)] text-sm sm:text-base lg:text-lg font-light text-white/90 tracking-[0.1em] uppercase leading-tight">
+                Aseff <span className="text-[var(--gold)]/70">&amp;</span> Farias
               </span>
-              <span className="text-[var(--gold)] text-[8px] sm:text-[9px] lg:text-[11px] tracking-[0.35em] uppercase font-light">
+              <span className="text-[var(--gold)]/60 text-[7px] sm:text-[8px] lg:text-[9px] tracking-[0.35em] uppercase font-light">
                 Advocacia
               </span>
             </div>
