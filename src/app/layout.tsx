@@ -33,12 +33,24 @@ export const metadata: Metadata = {
     "Santa Maria",
     "RS",
   ],
+  icons: {
+    icon: "/favicon.png",
+    apple: "/favicon.png",
+  },
   openGraph: {
     title: "Aseff & Farias Advocacia",
     description:
       "Especialistas em Direito Bancário e Previdenciário. Protegemos seus direitos com dedicação e transparência.",
     type: "website",
     locale: "pt_BR",
+    images: [
+      {
+        url: "/images/og-image.png",
+        width: 1080,
+        height: 1080,
+        alt: "Aseff & Farias Advocacia",
+      },
+    ],
   },
 };
 
