@@ -293,6 +293,25 @@ function AreasDeAtuacao() {
   );
 }
 
+function Avaliacoes() {
+  return (
+    <section id="avaliacoes" className="py-28 lg:py-36 bg-white">
+      <div className="max-w-6xl mx-auto px-6 lg:px-12">
+        <div className="text-center mb-16">
+          <div className="w-12 h-[1px] bg-[var(--gold)] mx-auto mb-8" />
+          <p className="text-[var(--gold)] text-[13px] font-medium tracking-[4px] uppercase mb-4">
+            Depoimentos
+          </p>
+          <h2 className="font-[family-name:var(--font-heading)] text-4xl lg:text-5xl font-medium text-[var(--navy-dark)] leading-[1.2]">
+            O que nossos clientes dizem
+          </h2>
+        </div>
+        <div className="elfsight-app-4e35fa4e-7796-4633-bcba-376de28ce954" data-elfsight-app-lazy></div>
+      </div>
+    </section>
+  );
+}
+
 function Equipe() {
   const socios = [
     {
@@ -605,6 +624,7 @@ export default function Home() {
         <Hero />
         <Sobre />
         <AreasDeAtuacao />
+        <Avaliacoes />
         <Equipe />
         <Contato />
       </main>
