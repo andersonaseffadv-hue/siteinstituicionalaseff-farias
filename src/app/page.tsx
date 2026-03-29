@@ -88,15 +88,17 @@ function Hero() {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex items-center bg-[var(--navy-dark)]"
+      className="relative min-h-screen flex items-center"
+      style={{
+        background: "linear-gradient(165deg, #FFFFFF 0%, #E8EDF2 15%, #B8C9D9 30%, #6A8FAD 48%, #1B3A5C 65%, #0D1B2A 80%, #060F1A 100%)",
+      }}
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-[var(--navy-dark)] via-[var(--navy)] to-[var(--navy-dark)]" />
-      <div className="absolute inset-0 opacity-[0.03]">
+      <div className="absolute inset-0 opacity-[0.02]">
         <div
           className="w-full h-full"
           style={{
             backgroundImage:
-              "linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px)",
+              "linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px)",
             backgroundSize: "60px 60px",
           }}
         />
@@ -104,13 +106,13 @@ function Hero() {
       <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-12 flex flex-col items-center justify-center min-h-screen text-center pt-32 sm:pt-28 lg:pt-48">
         <div>
           <LogoText className="mb-8 lg:mb-10" />
-          <h1 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl lg:text-6xl font-medium text-white leading-[1.1] mb-6">
+          <h1 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl lg:text-6xl font-medium text-white leading-[1.1] mb-6 drop-shadow-lg">
             Soluções jurídicas
             {" "}
             <span className="text-[var(--gold-light)] italic">com transparência</span>
             {" "}e dedicação
           </h1>
-          <p className="text-white/50 text-lg max-w-2xl mx-auto leading-relaxed mb-10 font-light">
+          <p className="text-white/70 text-lg max-w-2xl mx-auto leading-relaxed mb-10 font-light drop-shadow-md">
             Especialistas em Direito Bancário e Previdenciário. Atuamos para
             proteger seus direitos e conquistar os melhores resultados para
             cada caso.
@@ -120,13 +122,13 @@ function Hero() {
               href="https://wa.me/5555999655755"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-3 bg-[var(--gold)] hover:bg-[var(--gold-dark)] text-white px-8 py-4 text-[13px] font-semibold tracking-[2px] uppercase transition-all duration-300"
+              className="inline-flex items-center justify-center gap-3 bg-[var(--gold)] hover:bg-[var(--gold-dark)] text-white px-8 py-4 text-[13px] font-semibold tracking-[2px] uppercase transition-all duration-300 shadow-lg"
             >
               Fale Conosco
             </a>
             <a
               href="#areas"
-              className="inline-flex items-center justify-center gap-3 border border-white/20 hover:border-[var(--gold)]/50 text-white/70 hover:text-white px-8 py-4 text-[13px] font-semibold tracking-[2px] uppercase transition-all duration-300"
+              className="inline-flex items-center justify-center gap-3 border border-white/30 hover:border-[var(--gold)]/50 text-white/80 hover:text-white px-8 py-4 text-[13px] font-semibold tracking-[2px] uppercase transition-all duration-300"
             >
               Saiba Mais
             </a>
@@ -134,8 +136,8 @@ function Hero() {
         </div>
       </div>
       <div className="absolute bottom-6 sm:bottom-12 left-6 lg:left-12 flex items-center gap-4">
-        <div className="w-[1px] h-16 bg-white/20" />
-        <span className="text-white/30 text-[11px] tracking-[3px] uppercase rotate-0">
+        <div className="w-[1px] h-16 bg-[var(--navy-dark)]/30" />
+        <span className="text-[var(--navy-dark)]/40 text-[11px] tracking-[3px] uppercase rotate-0">
           Role para baixo
         </span>
       </div>
