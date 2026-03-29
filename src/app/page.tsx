@@ -90,7 +90,7 @@ function Hero() {
       id="inicio"
       className="relative min-h-screen flex items-center"
       style={{
-        background: "linear-gradient(180deg, #FFFFFF 0%, #E8F0F8 30%, #C5D9EC 55%, #0D1B2A 100%)",
+        background: "linear-gradient(180deg, #162A3E 0%, #0D1B2A 30%, #060F1A 70%, #0D1B2A 100%)",
       }}
     >
       <div className="absolute inset-0 opacity-[0.02]">
